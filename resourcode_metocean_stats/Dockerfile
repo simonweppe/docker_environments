@@ -9,7 +9,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # Install packages only available on pip
-RUN pip install --no-cache-dir  resourcecode  metocean-stats
+RUN pip install --no-cache-dir  resourcecode
+RUN pip install --no-cache-dir  metocean-stats
 
 
 # # Add conda-forge channel and install geospatial/scientific stack
