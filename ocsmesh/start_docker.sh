@@ -6,10 +6,10 @@ docker run --rm -it \
   -e DISPLAY=$DISPLAY \
   -v /tmp/.X11-unix:/tmp/.X11-unix \
   -e MPLBACKEND=Agg \
-   simonwp/ocsmesh \
+  simonwp/resourcecode \
   /bin/bash 
 
 # MUST USE  that in python code :
+# import matplotlib
 # matplotlib.use('TkAgg')
 # import matplotlib.pyplot as plt
-
